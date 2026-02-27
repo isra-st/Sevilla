@@ -1,0 +1,31 @@
+# Idealista Sevilla Scraper - dependencies
+# Python 3.10+
+
+# HTML parsing
+parsel>=1.8.0
+
+# HTTP client (for optional ScrapFly or simple requests)
+httpx>=0.25.0
+
+# Browser automation + stealth
+playwright>=1.40.0
+playwright-stealth>=1.0.6
+
+# Alternative: Selenium + ChromeDriver (USE_SELENIUM or SCRAPER_APPROACH=selenium)
+selenium>=4.0.0
+
+# Anti-detection: patched ChromeDriver (SCRAPER_APPROACH=undetected); try --test-approaches
+undetected-chromedriver>=3.5.0
+
+# Optional: human-like cursor (DataDome bypass)
+# python_ghost_cursor  # uncomment if using Playwright with ghost-cursor
+
+# Schema/validation (optional)
+pydantic>=2.0.0
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# Env loading
+python-dotenv>=1.0.0
